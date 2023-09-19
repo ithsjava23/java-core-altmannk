@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Basic Tests",
+      "setup": "",
+      "run": "mvn test --quiet -Dgroups=basic",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "When New",
+      "setup": "",
+      "run": "mvn test --quiet -Dtest=WarehouseTest$WhenNew",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "One product",
+      "setup": "",
+      "run": "mvn test --quiet -Dtest=WarehouseTest$AfterAddingProduct",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Multiple products",
+      "setup": "",
+      "run": "mvn test -Dtest=WarehouseTest$AfterAddingMultipleProducts",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Category",
+      "setup": "",
+      "run": "mvn test --quiet -Dtest=CategoryTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
