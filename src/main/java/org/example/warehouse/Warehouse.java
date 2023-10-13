@@ -8,7 +8,7 @@ public class Warehouse {
     //Private field
     private final String name;
     private final List<ProductRecord> products = new ArrayList<>();
-    private final static List<ProductRecord> changedProducts = new ArrayList<>();
+    private final List<ProductRecord> changedProducts = new ArrayList<>();
 
     //Private constructor
     private Warehouse(String name) {
@@ -100,8 +100,8 @@ public class Warehouse {
     }
 
     //get list of changed product
-    public static List<ProductRecord> getChangedProducts() {
-        return changedProducts;
+    public List<ProductRecord> getChangedProducts() {
+        return List.copyOf(changedProducts);
     }
 
     //group products by category
