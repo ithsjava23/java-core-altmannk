@@ -23,7 +23,7 @@ public class Warehouse {
 
     //create an instance of warehouse with an empty name
     public static Warehouse getInstance() {
-        return new Warehouse("");
+        return new Warehouse("Default");
     }
 
     //create an instance of warehouse with a name
